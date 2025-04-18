@@ -1,5 +1,4 @@
-import modelos.Filme;
-import modelos.Serie;
+import br.com.alura.screenmatch.modelos.Filme;
 
 public class Main {
     public static void main(String[] args) {
