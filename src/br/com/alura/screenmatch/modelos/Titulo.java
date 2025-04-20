@@ -42,6 +42,14 @@ public class Titulo {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
+    public void setSomaDasAvaliacoes(double somaDasAvaliacoes) {
+        this.somaDasAvaliacoes = somaDasAvaliacoes;
+    }
+
+    public void setTotalDeAvaliacoes(int totalDeAvaliacoes) {
+        this.totalDeAvaliacoes = totalDeAvaliacoes;
+    }
+
     public void exibeFichaTecnica(){
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
