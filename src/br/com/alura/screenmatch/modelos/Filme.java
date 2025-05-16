@@ -6,6 +6,10 @@ import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
+    public Filme(String nome, int anoDeLancamento) {
+        super(nome, anoDeLancamento);
+    }
+
     public String getDiretor() {
         return diretor;
     }
@@ -22,5 +26,10 @@ public class Filme extends Titulo implements Classificavel {
     public void getRecomendacao() {
         FiltroRecomendacao reco = new FiltroRecomendacao();
         System.out.println(this.getNome() + ": " + reco.filtra(this));
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Filme: %s (%d)",getNome(),getAnoDeLancamento());
     }
 }

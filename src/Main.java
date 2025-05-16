@@ -5,15 +5,15 @@ import br.com.alura.screenmatch.modelos.Serie;
 
 public class Main {
     public static void main(String[] args) {
-        Filme levaJato = new Filme();
-        levaJato.setNome("Operação Leva Jato");
-        levaJato.setTotalDeAvaliacoes(7);
-        levaJato.setSomaDasAvaliacoes(70);
-        levaJato.getRecomendacao();
+        Filme filme1 = new Filme("10 coisas que eu odeio em você", 1999);
+        filme1.setTotalDeAvaliacoes(7);
+        filme1.setSomaDasAvaliacoes(70);
+        filme1.getRecomendacao();
 
-        Episodio fireInYourFingertips = new Episodio();
-        fireInYourFingertips.setTotalVisualizacoes(350);
+        Episodio casamento = new Episodio();
+        casamento.setTotalVisualizacoes(350);
         FiltroRecomendacao reco = new FiltroRecomendacao();
-        System.out.println(reco.filtra(fireInYourFingertips));
+        System.out.println(reco.filtra(casamento));
+        System.out.println(filme1);
     }
 }
