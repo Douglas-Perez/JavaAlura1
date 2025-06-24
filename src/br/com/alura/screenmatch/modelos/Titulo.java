@@ -1,5 +1,7 @@
 package br.com.alura.screenmatch.modelos;
 
+import br.com.alura.screenmatch.calculos.Classificavel;
+
 public class Titulo {
     private String nome;
     private boolean incluidoNoPlano;
