@@ -42,5 +42,7 @@ public class Main {
         Collections.sort(buscaPorArtista);
         System.out.println(buscaPorArtista);
 
+        Collections.sort(lista);
+        System.out.println(lista);
     }
 }
